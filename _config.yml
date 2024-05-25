@@ -2,20 +2,18 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-email: you@example.com
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+title: Umakanta Maharana # the website title (if blank, full name will be used instead)
+first_name: Umakanta
+middle_name: 
+last_name: Maharana
+email: umakantamaharana70@gmail.com
+description: A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: portfolio, machine learning, computer science, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 👨‍💼 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://umakantamaharana.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -30,17 +28,17 @@ impressum_path: # set to path to include impressum link in the footer, use the s
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
-  enabled: true
+  enabled: false
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
 
-# -----------------------------------------------------------------------------
+# ----------------------> # the ">" symbol means to ignore newlines until "footer_text:"-------------------------------------------------------
 # RSS Feed
 # -----------------------------------------------------------------------------
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -48,7 +46,7 @@ rss_icon: true
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 
 # Dimensions
@@ -76,15 +74,15 @@ dblp_url: # your DBLP profile url
 discord_id: # your discord id (18-digit unique numerical identifier)
 facebook_id: # your facebook id
 flickr_id: # your flickr id
-github_username: # your GitHub user name
+github_username: Umakantamaharana
 gitlab_username: # your GitLab user name
 ieee_id: # your ieeexplore.ieee.org/author/id
-instagram_id: # your instagram id
+instagram_id: # __umakanta_maharana__
 kaggle_id: # your kaggle id
 keybase_username: # your keybase user name
 lastfm_id: # your lastfm id
 lattes_id: # your ID on Lattes (Brazilian Lattes CV)
-linkedin_username: # your LinkedIn user name
+linkedin_username: umakanta-maharana-b6b140169
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 medium_username: # your Medium username
 orcid_id: # your ORCID ID
@@ -93,7 +91,7 @@ pinterest_id: # your pinterest id
 publons_id: # your ID on Publons
 quora_username: # your Quora username
 research_gate_profile: # your profile on ResearchGate
-scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
+scholar_userid: # your Google Scholar ID
 scopus_id: # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
 spotify_id: # your spotify id
@@ -110,7 +108,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Reachout to me via email.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -164,9 +162,9 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+# external_sources:
+#   - name: 
+#     rss_url: 
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -183,12 +181,12 @@ collections:
     permalink: /projects/:path/
 
 announcements:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 
@@ -211,7 +209,54 @@ kramdown:
 
 # Includes & excludes
 include: ["_pages"]
-exclude:
+exclude:  
+  - _projects/1_project.md
+  - _projects/2_project.md
+  - _projects/3_project.md
+  - _projects/4_project.md
+  - _projects/5_project.md
+  - _projects/6_project.md
+    
+  - _posts/2015-03-15-formatting-and-links.md
+  - _posts/2015-05-15-images.md
+  - _posts/2015-07-15-code.md
+  - _posts/2015-10-20-disqus-comments.md
+  - _posts/2015-10-20-math.md
+  - _posts/2018-12-22-distill.md
+  - _posts/2020-09-28-github-metadata.md
+  - _posts/2020-09-28-twitter.md
+  - _posts/2021-07-04-diagrams.md
+  - _posts/2022-02-01-redirect.md
+  - _posts/2022-12-10-giscus-comments.md
+  - _posts/2023-03-20-table-of-contents.md
+  - _posts/2023-03-21-tables.md
+  - _posts/2023-04-24-videos.md
+  - _posts/2023-04-25-audios.md
+  - _posts/2023-04-25-sidebar-table-of-contents.md
+  - _posts/2023-05-12-custom-blockquotes.md
+  - _posts/2023-07-04-jupyter-notebook.md
+  - _posts/2023-07-12-post-bibliography.md
+  - _posts/2023-12-12-tikzjax.md
+  - _posts/2024-01-26-chartjs.md
+  - _posts/2024-01-26-echarts.md
+  - _posts/2024-01-26-geojson-map.md
+  - _posts/2024-01-27-advanced-images.md
+  - _posts/2024-01-27-code-diff.md
+  - _posts/2024-01-27-vega-lite.md
+  - _posts/2024-04-15-pseudocode.md
+  - _posts/2024-04-28-post-citation.md
+  - _posts/2024-04-29-typograms.md
+  - _posts/2024-05-01-tabs.md
+
+  - _pages/about_einstein.md
+  - _pages/blog.md
+  - _pages/cv.md
+  - _pages/dropdown.md
+  - _pages/news.md
+  - _pages/profiles.md
+  - _pages/publications.md
+  - _pages/teaching.md
+
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
