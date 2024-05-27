@@ -2,7 +2,7 @@
 layout: page
 title: "Machine Unlearning"
 description: SERB funded project.
-img: 'https://www.hopkinsmedicine.org/-/media/images/health/1_-conditions/brain-nerves-and-spine/traumatic-brain-injury-teaser.jpg'
+img: 'assets/img/serb-project-bg.jpg'
 date: 2024-05-25
 category: funded
 ---
