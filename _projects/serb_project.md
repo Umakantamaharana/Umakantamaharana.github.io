@@ -2,7 +2,7 @@
 layout: page
 title: "Machine Unlearning"
 description: SERB funded project.
-img: 'assets/img/serb-project-bg.jpg'
+img: "assets/img/serb-project-bg.jpg"
 date: 2024-05-25
 category: funded
 ---
@@ -10,7 +10,7 @@ category: funded
 ![SERB Logo](https://acceleratevigyan.gov.in/assets/images/about/serblogo_logo.png){:width="200px"}
 
 **Science and Engineering Research Board**  
-*(Statutory Body Established Through an Act of Parliament: SERB Act 2008)*  
+_(Statutory Body Established Through an Act of Parliament: SERB Act 2008)_  
 **Government of India**
 
 ---
@@ -73,4 +73,4 @@ Thank you for your interest and support!
 
 ---
 
-*For more information and updates on this project, feel free to reach out to me at KiiT. Let's collaborate and innovate for a smarter, safer future!*
+_For more information and updates on this project, feel free to reach out to me at KiiT. Let's collaborate and innovate for a smarter, safer future!_
