@@ -35,6 +35,7 @@ nav_order: 6
 </table>
 
 ---
+
 ## Python Programming
 
 **Course Goal**: Introduce students to Python, from beginner syntax to real-world applications like database interaction and web scripting.
@@ -112,4 +113,5 @@ nav_order: 6
 </table>
 
 ---
+
 Want to collaborate or see the teaching materials? [get in touch](/).
