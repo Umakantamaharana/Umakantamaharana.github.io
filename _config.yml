@@ -50,7 +50,8 @@ search_enabled: false
 socials_in_search: true
 
 # Dimensions
-max_width: 930px
+# max_width: 930px
+max_width: 100vw
 
 # TODO: add layout settings (single page vs. multi-page)
 

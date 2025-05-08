@@ -5,7 +5,7 @@ permalink: /projects/
 description: A collection of good projects.
 nav: true
 nav_order: 3
-display_categories: [funded]
+display_categories: [funded, research]
 horizontal: false
 ---
 
