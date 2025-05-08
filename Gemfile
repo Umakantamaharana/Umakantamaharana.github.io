@@ -26,4 +26,5 @@ group :other_plugins do
     gem 'feedjira'
     gem 'httparty'
     gem 'html-proofer'
+    gem 'observer'
 end

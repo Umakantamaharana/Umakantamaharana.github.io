@@ -190,6 +190,7 @@ GEM
       racc (~> 1.7)
     nokogiri (1.18.8-x86_64-linux-gnu)
       racc (~> 1.4)
+    observer (0.1.2)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     pdf-reader (2.14.1)
@@ -257,6 +258,7 @@ DEPENDENCIES
   jekyll-twitter-plugin
   jemoji
   mini_racer
+  observer
   unicode_utils
   webrick
 
