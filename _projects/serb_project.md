@@ -7,7 +7,7 @@ date: 2024-05-25
 category: funded
 ---
 
-![SERB Logo](https://acceleratevigyan.gov.in/assets/images/about/serblogo_logo.png){:width="200px"}
+![SERB Logo](https://anrfonline.in/ANRF/resources/app_srv/serb/gl/homepage/img/imlinks/serbimp.png){:width="200px"}
 
 **Science and Engineering Research Board**  
 _(Statutory Body Established Through an Act of Parliament: SERB Act 2008)_  
