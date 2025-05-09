@@ -7,4 +7,3 @@ redirect: "/rpwr.github.io/"
 date: 2025-04-10
 category: research
 ---
-
