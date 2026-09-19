@@ -364,5 +364,62 @@ html[data-theme="light"] .publications-card ol.bibliography > li {
     margin-bottom: 22px !important;
     border-radius: 14px !important;
   }
+
+  /* Social Icons: Single row on mobile */
+  .social .contact-icons {
+    font-size: 1.55rem !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+
+    a {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 3px !important;
+      font-size: 1.55rem !important;
+      line-height: 1 !important;
+    }
+  }
 }
+
+/* Extra small mobile screens (e.g. 360px - 400px width) */
+@media (max-width: 420px) {
+  .social .contact-icons {
+    font-size: 1.35rem !important;
+    gap: 7px !important;
+
+    a {
+      font-size: 1.35rem !important;
+      padding: 2px !important;
+    }
+  }
+}
+
+/* Social icons base refinement (down from 4rem for sleekness) */
+.social .contact-icons {
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    line-height: 1;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
 
