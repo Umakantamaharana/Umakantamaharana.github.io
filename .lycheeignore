@@ -1,3 +1,4 @@
 # Lychee link checker ignore patterns
 mailto:.*
 tel:.*
+.*\.webp
