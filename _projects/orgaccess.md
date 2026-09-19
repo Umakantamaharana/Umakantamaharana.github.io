@@ -6,8 +6,10 @@ img: "assets/img/publication_preview/orgaccess.png"
 date: 2025-05-25
 importance: 1
 category: research
-related_publications: true
+badge: "EMNLP 2025"
 github: https://github.com/respailab/orgaccess
+arxiv: "2505.19165"
+huggingface: https://huggingface.co/datasets/respai-lab/orgaccess
 ---
 
 # OrgAccess: A Benchmark for Role-Based Access Control in Organization-Scale LLMs

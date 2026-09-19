@@ -1,35 +1,56 @@
-<div class="col">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
-      {% if project.img %}
+<div class="col mb-4">
+  <div class="card h-100 project-card hoverable">
+    {% if project.img %}
+      <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}" class="project-img-wrapper">
         {%
           include figure.liquid
           loading="eager"
           path=project.img
-          sizes = "250px"
-          alt="project thumbnail"
-          class="card-img-top"
+          sizes = "(min-width: 768px) 450px, 100vw"
+          alt=project.title
+          class="card-img-top project-card-img"
         %}
-      {% endif %}
-      <div class="card-body">
-        <h2 class="card-title">{{ project.title }}</h2>
-        <p class="card-text">{{ project.description }}</p>
-        <div class="row ml-1 mr-1 p-0">
+        {% if project.badge %}
+          <span class="project-card-badge">{{ project.badge }}</span>
+        {% endif %}
+      </a>
+    {% elsif project.badge %}
+      <div class="project-badge-bar">
+        <span class="project-card-badge">{{ project.badge }}</span>
+      </div>
+    {% endif %}
+
+    <div class="card-body d-flex flex-column">
+      <h3 class="card-title project-card-title">
+        <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+          {{ project.title }}
+        </a>
+      </h3>
+
+      <p class="card-text project-card-desc flex-grow-1">{{ project.description }}</p>
+
+      <div class="project-card-footer">
+        <div class="project-action-links">
+          {% if project.arxiv %}
+            <a href="https://arxiv.org/abs/{{ project.arxiv }}" class="project-btn btn-paper" target="_blank" rel="noopener noreferrer" title="arXiv Paper">
+              <i class="ai ai-arxiv"></i> Paper
+            </a>
+          {% endif %}
           {% if project.github %}
-            <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-              </div>
-              {% if project.github_stars %}
-                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                  <i class="fa-solid fa-star"></i>
-                  <span id="{{ project.github_stars }}-stars"></span>
-                </span>
-              {% endif %}
-            </div>
+            <a href="{{ project.github }}" class="project-btn btn-github" target="_blank" rel="noopener noreferrer" title="GitHub Repository">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+          {% endif %}
+          {% if project.huggingface %}
+            <a href="{{ project.huggingface }}" class="project-btn btn-hf" target="_blank" rel="noopener noreferrer" title="Hugging Face Dataset">
+              🤗 Dataset
+            </a>
           {% endif %}
         </div>
+        <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}" class="project-explore-link">
+          Explore <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
     </div>
-  </a>
+  </div>
 </div>

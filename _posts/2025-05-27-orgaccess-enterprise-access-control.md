@@ -5,6 +5,7 @@ date: 2025-05-27 10:00:00
 description: "We built OrgAccess to test if LLMs can follow real-world corporate access rules. Even top frontier models like GPT-4.1 struggled badly when multiple workplace permissions collided."
 tags: ai-safety enterprise-ai benchmarks llm access-control
 categories: research
+featured: true
 giscus_comments: true
 related_posts: true
 ---

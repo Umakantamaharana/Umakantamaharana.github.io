@@ -3,8 +3,8 @@ layout: page
 permalink: /teaching/
 title: Teaching
 description: Welcome! Here you’ll find an overview of the courses I’ve taught — combining programming fundamentals and applied data science. I aim to make learning engaging, practical, and aligned with real-world challenges.
-nav: true
-nav_order: 6
+nav: false
+nav_order: 3
 ---
 
 ## GIET University, Rayagada
