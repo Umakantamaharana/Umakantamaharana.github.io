@@ -22,10 +22,10 @@ horizontal: false
   </div>
 
   <!-- Categorized Project Sections -->
-  {% for category in page.display_categories %}
+{% for category in page.display_categories %}
     {% assign categorized_projects = site.projects | where: "category", category %}
     {% assign sorted_projects = categorized_projects | sort: "importance" %}
-    
+
     <section class="project-section-wrapper mb-5" id="{{ category }}">
       <div class="project-category-header">
         <h2 class="category-heading">
@@ -46,5 +46,5 @@ horizontal: false
         {% endfor %}
       </div>
     </section>
-  {% endfor %}
+{% endfor %}
 </div>

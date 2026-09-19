@@ -97,6 +97,7 @@ badge: "SERB Funded (Completed)"
       <h4>Architecture Scalability</h4>
       <p>Validating algorithmic efficiency across modern backbones including ResNets, Vision Transformers (ViTs), and multi-modal representation pipelines.</p>
     </div>
+
   </div>
 </div>
 
@@ -130,6 +131,7 @@ badge: "SERB Funded (Completed)"
         <p>Benchmarking across vision-language architectures; development of empirical unlearning verification methodologies; publication dissemination and final SERB grant report submission.</p>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -161,6 +163,7 @@ badge: "SERB Funded (Completed)"
         <div class="person-affil">Responsible AI, Vision &amp; Deep Learning</div>
       </div>
     </div>
+
   </div>
 </div>
 

@@ -15,7 +15,7 @@ One student needs to see a diagram or a physical metaphor. Another wants the for
 
 Yet, despite all the excitement about "AI tutors," almost every educational chatbot today behaves like a talking encyclopedia. You ask a question, it recites a neat three-paragraph summary. If you say "I still don't understand," it usually just recites the same three paragraphs with slightly simpler synonyms.
 
-In our paper, [*"Investigating Pedagogical Teacher and Student LLM Agents: Genetic Adaptation Meets Retrieval Augmented Generation Across Learning Style"*](https://arxiv.org/abs/2505.19173) (accepted at **EMNLP 2025**), we set out to build something much closer to a real classroom: a multi-agent environment where an AI teacher learns how to teach diverse learners with distinct personalities.
+In our paper, [_"Investigating Pedagogical Teacher and Student LLM Agents: Genetic Adaptation Meets Retrieval Augmented Generation Across Learning Style"_](https://arxiv.org/abs/2505.19173) (accepted at **EMNLP 2025**), we set out to build something much closer to a real classroom: a multi-agent environment where an AI teacher learns how to teach diverse learners with distinct personalities.
 
 ---
 
@@ -34,6 +34,7 @@ In our paper, [*"Investigating Pedagogical Teacher and Student LLM Agents: Genet
 ### The Flaw in Existing Educational Simulations
 
 Simulating educational interactions with AI is tempting, but previous attempts usually suffered from two big blind spots:
+
 1. **Static, Homogeneous Students:** Simulated students were basically treated as blank knowledge buckets. They had no learning preferences, no frustration thresholds, and no cognitive variety.
 2. **Rigid Teachers:** The simulated teacher followed a static prompt written by an engineer. When a student struggled, the teacher couldn't dynamically alter its pedagogical approach based on feedback.
 
@@ -44,6 +45,7 @@ To break out of that rigid mold, we needed diversity on the student side and ada
 ### Step 1: Giving Students Real Learning Personalities with Persona-RAG
 
 Grounding our work in established pedagogical research (such as the Felder-Silverman learning style model), we designed student agents across varying cognitive dimensions:
+
 - **Visual vs. Verbal:** Do they grasp concepts better through structural analogies and imagery, or text descriptions?
 - **Sequential vs. Global:** Do they need a meticulous step-by-step progression, or the big-picture context first?
 - **Active vs. Reflective:** Do they learn by interacting, testing, and querying, or by introspective processing?
@@ -57,6 +59,7 @@ To make these personalities functionally meaningful rather than just prompt cosm
 Instead of hand-coding rules for how a teacher should react, we gave the teacher agent an adaptive policy that evolves using a **genetic algorithm**.
 
 Here is how it works:
+
 1. **Teaching Cycles:** The teacher interacts with cohorts of varied student agents across different educational topics.
 2. **Assessment:** At the end of each session, we measure how much the students' comprehension improved.
 3. **Selection and Mutation:** Teaching policies that led to higher comprehension gains across diverse student groups are selected, recombined, and slightly varied.

@@ -39,6 +39,7 @@ To find out, our team at RespAI Lab, in collaboration with researchers from NUS,
 Most existing AI benchmarks evaluate models on trivia, math competitions, Python coding, or general chat helpfulness. Those benchmarks measure raw intelligence or factual recall.
 
 Real-world enterprise access control is fundamentally different. It requires **strict compositional reasoning under conflicting constraints**:
+
 - A user might satisfy 4 out of 5 required conditions, but missing that 5th condition means a hard **REJECT**.
 - A query might be phrased politely or sound urgent ("My manager needs this urgently for the 2 PM meeting!"), yet the model must coldly refuse if permissions don't allow it.
 - Permissions often overlap or contradict each other, requiring the system to evaluate precedence accurately.
@@ -50,12 +51,14 @@ Because corporate security policies are proprietary and sensitive, researchers p
 ### How We Built OrgAccess
 
 We grounded OrgAccess in the **NIST (National Institute of Standards and Technology)** access control principles, covering **40 distinct permission types** commonly found across enterprise sectors:
+
 - **Role and Department Boundaries:** Finance, Legal, HR, Engineering, R&D.
 - **Action Scopes:** Read-only, write, audit, export, delete.
 - **Contextual Restrictions:** Geographic location restrictions, network boundaries, session timeouts, and project deadlines.
 - **Collaboration Overrides:** Shared joint-venture access with partial disclosure rules.
 
 From this foundation, we generated **70,000 test cases** across three difficulty tiers:
+
 1. **Easy (40,000 cases):** 1 clear permission rule tested in isolation.
 2. **Medium (10,000 cases):** 3-permission tuples where multiple conditions must be synthesized.
 3. **Hard (20,000 cases):** 5-permission tuples with overlapping, nested, and conflicting constraints.
@@ -79,6 +82,7 @@ Here is what the data revealed:
 This benchmark makes one thing very clear: **you cannot simply write a system prompt saying "Be careful with permissions" and expect an LLM to safeguard enterprise secrets.**
 
 Until models develop stronger formal reasoning over nested constraints, enterprise AI architectures need a hybrid approach:
+
 - Hard deterministic authorization layers (like traditional RBAC policy engines) to verify permissions before the LLM ever touches the data.
 - Dedicated guardrail models trained explicitly on negative constraint satisfaction.
 - Comprehensive auditing against benchmarks like OrgAccess before deploying internal tools.

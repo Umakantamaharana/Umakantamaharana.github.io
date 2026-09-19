@@ -31,6 +31,7 @@ nav_order: 1
         <i class="ai ai-google-scholar"></i> Google Scholar Profile <i class="fa-solid fa-arrow-up-right-from-square fa-xs ml-1"></i>
       </a>
     </div>
+
   </div>
 
   <!-- Search & Filter Toolbar -->
@@ -48,6 +49,7 @@ nav_order: 1
       <button class="pub-filter-btn" data-filter="pedagogical">Multi-Agent</button>
       <button class="pub-filter-btn" data-filter="medical">Healthcare</button>
     </div>
+
   </div>
 
   <!-- Publications Bibliography in Modern Card Layout -->

@@ -9,11 +9,11 @@ giscus_comments: true
 related_posts: true
 ---
 
-If a medical student guesses the right illness on a multiple-choice exam, but when asked *why*, explains that the patient's blood pressure matches their shoe size, you would not let them near a hospital ward.
+If a medical student guesses the right illness on a multiple-choice exam, but when asked _why_, explains that the patient's blood pressure matches their shoe size, you would not let them near a hospital ward.
 
 Yet in modern artificial intelligence, we do something uncomfortably close to that almost every day. We feed clinical notes into a large language model, see a 90%+ diagnostic accuracy number on a test set, celebrate the benchmark score, and assume the model "understands" medicine.
 
-Our recent study, [*"Right Prediction, Wrong Reasoning: Uncovering LLM Misalignment in RA Disease Diagnosis"*](https://arxiv.org/abs/2504.06581), looked beneath that shiny hood. What we found should give anyone pause before deploying AI models as clinical pre-screening assistants.
+Our recent study, [_"Right Prediction, Wrong Reasoning: Uncovering LLM Misalignment in RA Disease Diagnosis"_](https://arxiv.org/abs/2504.06581), looked beneath that shiny hood. What we found should give anyone pause before deploying AI models as clinical pre-screening assistants.
 
 ---
 
@@ -41,9 +41,10 @@ We wanted to answer a simple, grounded question: **If an LLM says a patient has 
 
 ### The Experiment: Putting Explanations to the Test
 
-Working with clinical collaborators, we compiled real patient cases alongside expert diagnoses. We then evaluated several leading LLM agents across multi-round diagnostic interactions. 
+Working with clinical collaborators, we compiled real patient cases alongside expert diagnoses. We then evaluated several leading LLM agents across multi-round diagnostic interactions.
 
 We didn't just ask the models for a "Yes" or "No." We forced them to generate step-by-step clinical rationales:
+
 - Which specific clinical symptoms pointed to RA?
 - How did the lab values factor into the conclusion?
 - Why were alternative explanations (like osteoarthritis or viral arthritis) ruled out?
@@ -60,6 +61,7 @@ The quantitative results were striking:
 2. **The underlying reasoning collapsed:** Medical experts judged that **68% of the explanations were clinically unsound**.
 
 The models repeatedly committed subtle, dangerous errors:
+
 - **Spurious Correlations:** Attributing joint pain to laboratory values that had zero diagnostic relevance to autoimmune conditions.
 - **Hallucinated Clinical Links:** Claiming that a standard, normal biomarker was "a hallmark sign of active synovial inflammation."
 - **Inverted Logic:** Using the absence of a symptom as proof of the disease, or treating a negative test result as a confirmation.
@@ -70,9 +72,10 @@ Because the final word—"Diagnosis: Rheumatoid Arthritis"—happened to match t
 
 ### What Does This Mean for the Future of Medical AI?
 
-This gap between **prediction** and **reasoning** is what we call *explanation misalignment*.
+This gap between **prediction** and **reasoning** is what we call _explanation misalignment_.
 
 If an AI gives doctors the right answer along with plausible-sounding but false reasons, two bad things happen:
+
 1. **Automation Bias:** A busy physician might glance at the accurate diagnosis, trust the confident tone, and miss that the model is hallucinating the clinical justification.
 2. **Brittle Generalization:** A model relying on nonsense logic will inevitably fail when presented with complex real-world edge cases—such as a patient with overlapping lupus and arthritis, or atypical lab panels.
 

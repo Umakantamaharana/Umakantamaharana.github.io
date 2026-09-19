@@ -42,11 +42,12 @@ pagination:
         <button class="topic-filter-btn" data-topic="{{ tag | slugify }}">#{{ tag }}</button>
       {% endfor %}
     </div>
+
   </div>
 
   <!-- Featured Research Section -->
-  {% assign featured_posts = site.posts | where: "featured", true %}
-  {% if featured_posts.size > 0 %}
+{% assign featured_posts = site.posts | where: "featured", true %}
+{% if featured_posts.size > 0 %}
     {% for post in featured_posts limit: 1 %}
       {% if post.external_source == blank %}
         {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
@@ -75,14 +76,14 @@ pagination:
         </div>
       </div>
     {% endfor %}
-  {% endif %}
+{% endif %}
 
   <!-- All Articles Cards Grid -->
-  {% if page.pagination.enabled %}
+{% if page.pagination.enabled %}
     {% assign postlist = paginator.posts %}
-  {% else %}
+{% else %}
     {% assign postlist = site.posts %}
-  {% endif %}
+{% endif %}
 
   <div class="blog-cards-grid" id="blog-cards-grid">
     {% for post in postlist %}
@@ -118,6 +119,7 @@ pagination:
         </div>
       </article>
     {% endfor %}
+
   </div>
 
   <!-- Empty Search Result Notice -->
@@ -126,9 +128,9 @@ pagination:
     <p>No articles found matching your query.</p>
   </div>
 
-  {% if page.pagination.enabled %}
+{% if page.pagination.enabled %}
     {% include pagination.liquid %}
-  {% endif %}
+{% endif %}
 
 </div>
 
