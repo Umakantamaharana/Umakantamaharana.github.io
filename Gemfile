@@ -27,4 +27,5 @@ group :other_plugins do
     gem 'httparty'
     gem 'html-proofer'
     gem 'observer'
+    gem 'ostruct'
 end

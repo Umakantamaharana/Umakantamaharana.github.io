@@ -1,0 +1,161 @@
+/* Custom Homepage and UI Enhancements */
+
+/* Profile Image Styling */
+.profile {
+  .img-fluid {
+    border-radius: 18px !important;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45) !important;
+    }
+  }
+
+  .more-info {
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: var(--global-text-color-light);
+    line-height: 1.5;
+
+    p {
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      i {
+        width: 16px;
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+/* Bio Content & Intro */
+.bio-content {
+  p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.1rem;
+  }
+
+  p.lead {
+    font-size: 1.15rem;
+    font-weight: 400;
+  }
+}
+
+/* Status Pill Badge */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(var(--global-theme-color-rgb, 26, 95, 180), 0.12);
+  border: 1px solid rgba(var(--global-theme-color-rgb, 26, 95, 180), 0.3);
+  color: var(--global-theme-color);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+/* Research Interest Pills */
+.interest-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background-color: var(--global-code-bg-color);
+  border: 1px solid var(--global-divider-color);
+  color: var(--global-text-color) !important;
+  padding: 7px 14px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 450;
+  transition: all 0.25s ease;
+
+  i {
+    color: var(--global-theme-color);
+  }
+
+  &:hover {
+    background-color: var(--global-theme-color);
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(var(--global-theme-color-rgb, 26, 95, 180), 0.25);
+
+    i {
+      color: #ffffff;
+    }
+  }
+}
+
+/* Quick Action Contact Buttons */
+.quick-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background-color: transparent;
+  border: 1px solid var(--global-divider-color);
+  color: var(--global-text-color) !important;
+  padding: 6px 15px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+
+  i {
+    font-size: 0.95rem;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    background-color: rgba(var(--global-theme-color-rgb, 26, 95, 180), 0.1);
+    color: var(--global-theme-color) !important;
+    transform: translateY(-2px);
+
+    i {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* Polished Table Rows for News and Blog Posts */
+.table-hover-card {
+  tr {
+    transition: background-color 0.2s ease;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.03);
+    }
+
+    th {
+      font-weight: 600;
+      color: var(--global-theme-color);
+      font-size: 0.88rem;
+    }
+  }
+}
+
+/* Headings refinement */
+.post header.post-header {
+  margin-bottom: 2rem;
+
+  .post-title {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    font-size: 2.3rem;
+  }
+
+  .desc {
+    font-size: 1.15rem;
+    color: var(--global-text-color-light);
+    margin-top: 4px;
+  }
+}
