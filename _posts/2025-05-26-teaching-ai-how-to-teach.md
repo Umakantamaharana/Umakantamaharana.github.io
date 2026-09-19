@@ -15,7 +15,7 @@ One student needs to see a diagram or a physical metaphor. Another wants the for
 
 Yet, despite all the excitement about "AI tutors," almost every educational chatbot today behaves like a talking encyclopedia. You ask a question, it recites a neat three-paragraph summary. If you say "I still don't understand," it usually just recites the same three paragraphs with slightly simpler synonyms.
 
-In our paper, [*"Investigating Pedagogical Teacher and Student LLM Agents: Genetic Adaptation Meets Retrieval Augmented Generation Across Learning Style"*](https://arxiv.org/abs/2505.19173), we set out to build something much closer to a real classroom: a multi-agent environment where an AI teacher learns how to teach diverse learners with distinct personalities.
+In our paper, [*"Investigating Pedagogical Teacher and Student LLM Agents: Genetic Adaptation Meets Retrieval Augmented Generation Across Learning Style"*](https://arxiv.org/abs/2505.19173) (accepted at **EMNLP 2025**), we set out to build something much closer to a real classroom: a multi-agent environment where an AI teacher learns how to teach diverse learners with distinct personalities.
 
 ---
 

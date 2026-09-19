@@ -1,4 +1,151 @@
-/* Custom Homepage and UI Enhancements */
+/* Custom Homepage, UI Enhancements, and Modular Card Sections */
+
+/* Justify Site Contents */
+.bio-content p,
+.post article p,
+.post-content p,
+.abstract p,
+.news td,
+.page-content p {
+  text-align: justify !important;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+/* Separable Section Cards */
+.home-card {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.14);
+  }
+}
+
+/* Light Theme Card Variant */
+html[data-theme="light"] .home-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* Section Header Bar */
+.section-header {
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 12px;
+  margin-bottom: 20px !important;
+
+  .section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--global-text-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .section-icon {
+      font-size: 1.15rem;
+    }
+  }
+
+  .section-more-link {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--global-theme-color) !important;
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.85;
+      transform: translateX(3px);
+    }
+  }
+}
+
+/* Individual Publication Card Styling inside Selected Papers */
+.publications-card {
+  ol.bibliography {
+    list-style: none;
+    padding-left: 0;
+
+    > li {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      padding: 20px 22px;
+      margin-bottom: 20px;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        border-color: rgba(var(--global-theme-color-rgb, 26, 95, 180), 0.4);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+      }
+    }
+  }
+}
+
+html[data-theme="light"] .publications-card ol.bibliography > li {
+  background: rgba(0, 0, 0, 0.015);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+
+  &:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* Modern Table Rows for News and Blog Posts */
+.news-card, .posts-card {
+  .table {
+    margin-bottom: 0;
+
+    tr {
+      border-bottom: 1px solid var(--global-divider-color);
+      transition: background-color 0.2s ease;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.03);
+      }
+
+      th {
+        font-weight: 600;
+        font-size: 0.88rem;
+        color: var(--global-theme-color);
+        white-space: nowrap;
+        vertical-align: middle;
+        padding: 12px 10px;
+      }
+
+      td {
+        padding: 12px 10px;
+        vertical-align: middle;
+        line-height: 1.6;
+
+        a.news-title {
+          font-weight: 550;
+          color: var(--global-text-color);
+
+          &:hover {
+            color: var(--global-theme-color);
+          }
+        }
+      }
+    }
+  }
+}
 
 /* Profile Image Styling */
 .profile {
@@ -125,27 +272,9 @@
   }
 }
 
-/* Polished Table Rows for News and Blog Posts */
-.table-hover-card {
-  tr {
-    transition: background-color 0.2s ease;
-    border-radius: 8px;
-
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.03);
-    }
-
-    th {
-      font-weight: 600;
-      color: var(--global-theme-color);
-      font-size: 0.88rem;
-    }
-  }
-}
-
 /* Headings refinement */
 .post header.post-header {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 
   .post-title {
     font-weight: 700;
