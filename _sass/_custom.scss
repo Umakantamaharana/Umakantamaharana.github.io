@@ -288,3 +288,81 @@ html[data-theme="light"] .publications-card ol.bibliography > li {
     margin-top: 4px;
   }
 }
+
+/* Mobile Responsiveness: Stack Dates Above Content */
+@media (max-width: 768px) {
+  .news table,
+  .news-card table,
+  .posts-card table {
+    display: block !important;
+    width: 100% !important;
+
+    tbody {
+      display: block !important;
+      width: 100% !important;
+    }
+
+    tr {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      width: 100% !important;
+      padding: 12px 6px !important;
+      border-bottom: 1px solid var(--global-divider-color) !important;
+
+      &:last-child {
+        border-bottom: none !important;
+      }
+    }
+
+    th[scope="row"] {
+      display: inline-flex !important;
+      align-items: center !important;
+      width: auto !important;
+      max-width: 100% !important;
+      padding: 4px 10px !important;
+      margin-bottom: 8px !important;
+      font-size: 0.8rem !important;
+      font-weight: 600 !important;
+      color: var(--global-theme-color) !important;
+      background: rgba(var(--global-theme-color-rgb, 26, 95, 180), 0.12) !important;
+      border-radius: 6px !important;
+      white-space: nowrap !important;
+    }
+
+    td {
+      display: block !important;
+      width: 100% !important;
+      padding: 2px 4px 4px 4px !important;
+      font-size: 0.95rem !important;
+      line-height: 1.6 !important;
+    }
+  }
+
+  /* Mobile profile centering */
+  .about-hero .profile {
+    float: none !important;
+    text-align: center !important;
+    margin: 0 auto 20px auto !important;
+
+    .img-fluid {
+      max-width: 170px !important;
+      margin: 0 auto !important;
+    }
+
+    .more-info {
+      text-align: center !important;
+
+      p {
+        justify-content: center !important;
+      }
+    }
+  }
+
+  .home-card {
+    padding: 20px 18px !important;
+    margin-bottom: 22px !important;
+    border-radius: 14px !important;
+  }
+}
+
