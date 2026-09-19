@@ -1,34 +1,35 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"sanyal":
+  - firstname: ["Debdeep", "D."]
+    url: https://debdeepsanyal.com
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"tan":
+  - firstname: ["Hong Ming", "H. M.", "Hong-Ming"]
+    url: https://thm.sg
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"sinha":
+  - firstname: ["Yash", "Y."]
+    url: https://openreview.net/profile?id=~Yash_Sinha1
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"karande":
+  - firstname: ["Shirish", "S."]
+    url: https://openreview.net/profile?id=~Shirish_Karande1
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"kankanhalli":
+  - firstname: ["Mohan", "M.", "Mohan S."]
+    url: https://www.comp.nus.edu.sg/cs/people/mohan/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"kumar":
+  - firstname: ["Dhruv", "D."]
+    url: https://kudhru.github.io/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"mandal":
+  - firstname: ["Murari", "M."]
+    url: https://respailab.github.io/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"mali":
+  - firstname: ["Ankur", "A."]
+    url: https://ankurmali.github.io/
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"giles":
+  - firstname: ["C. Lee", "Lee", "C. L."]
+    url: http://clgiles.ist.psu.edu/
