@@ -32,11 +32,14 @@ social: true # includes social icons at the bottom of the page
   <p>
     Prior to starting my Ph.D., I was a Research Fellow at the <strong><a href="https://respailab.github.io/" target="_blank" rel="noopener noreferrer">RespAI Lab</a></strong>, where I worked on <strong>Role-Based Access Control in LLMs</strong> (including our <strong><a href="/projects/orgaccess/">OrgAccess</a></strong> benchmark, accepted at <strong>EMNLP 2025</strong>), healthcare AI diagnostic reasoning faithfulness, and selective machine unlearning under a <strong><a href="/projects/serb_project/">SERB Government of India research grant</a></strong>.
   </p>
+  <p>
+    Beyond academic research, I design and build production-grade web systems. I am the creator and developer of <strong><a href="https://www.formbharlo.in/" target="_blank" rel="noopener noreferrer">FormBharlo</a></strong> (<em>"Har Sarkari Bharti, Ek Jagah"</em>), a live public recruitment platform engineered with Next.js, PWA capabilities, and client-side document processing tools to help competitive exam aspirants across India track government job openings and application milestones in real time.
+  </p>
 </div>
 
 <div class="research-interests mt-4 mb-4">
   <h6 style="text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.8rem; color: var(--global-text-color-light); margin-bottom: 10px; font-weight: 600;">
-    Core Research Interests
+    Core Research Interests &amp; Focus
   </h6>
   <div class="d-flex flex-wrap" style="gap: 8px;">
     <span class="interest-pill"><i class="fa-solid fa-eye"></i> Computer Vision</span>
@@ -46,6 +49,7 @@ social: true # includes social icons at the bottom of the page
     <span class="interest-pill"><i class="fa-solid fa-shield-halved"></i> AI Safety &amp; Alignment</span>
     <span class="interest-pill"><i class="fa-solid fa-key"></i> Role-Based Access Control</span>
     <span class="interest-pill"><i class="fa-solid fa-eraser"></i> Machine Unlearning</span>
+    <span class="interest-pill"><i class="fa-solid fa-globe"></i> Full-Stack Web Systems</span>
   </div>
 </div>
 

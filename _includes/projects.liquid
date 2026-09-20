@@ -31,6 +31,11 @@
 
       <div class="project-card-footer">
         <div class="project-action-links">
+          {% if project.website %}
+            <a href="{{ project.website }}" class="project-btn btn-website" target="_blank" rel="noopener noreferrer" title="Live Website">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+            </a>
+          {% endif %}
           {% if project.arxiv %}
             <a href="https://arxiv.org/abs/{{ project.arxiv }}" class="project-btn btn-paper" target="_blank" rel="noopener noreferrer" title="arXiv Paper">
               <i class="ai ai-arxiv"></i> Paper

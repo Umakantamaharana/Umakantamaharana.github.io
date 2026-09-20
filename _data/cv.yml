@@ -41,8 +41,20 @@
         - Investigated medical diagnostic reasoning faithfulness and LLM misalignment in clinical AI.
         - Contributed to algorithmic machine unlearning under a SERB Government of India sponsored research initiative.
 
+- title: Production Systems & Engineering
+  type: time_table
+  contents:
+    - title: Founder & Lead Developer
+      institution: FormBharlo (formbharlo.in)
+      year: 2026 - Present
+      description:
+        - Architected and built a high-traffic public recruitment platform delivering real-time notifications for Central and State government vacancies across India.
+        - Implemented modern Next.js App Router, SSR/ISR caching strategies, responsive Tailwind CSS, PWA offline support, and structured SEO schema.
+        - Engineered client-side browser utilities including canvas-based photo and signature compression tools compliant with government portal submission limits.
+
 - title: Research Interests
   type: list
   contents:
     - <u>Computer Vision:</u> Video Action Recognition, Spatio-Temporal Modeling, Precision Livestock Analytics.
     - <u>Trustworthy AI:</u> Large Language Models (LLMs), AI Safety & Alignment, Role-Based Access Control, Machine Unlearning.
+    - <u>Full-Stack Systems:</u> Next.js, High-Throughput Web Platforms, PWA, Client-Side Image Processing.

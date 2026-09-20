@@ -5,7 +5,7 @@ permalink: /projects/
 description: Government-sponsored initiatives, enterprise LLM safety benchmarks, and adaptive multi-agent frameworks built at RespAI Lab.
 nav: true
 nav_order: 2
-display_categories: [funded, research]
+display_categories: [funded, research, platforms]
 horizontal: false
 ---
 
@@ -17,7 +17,7 @@ horizontal: false
     </div>
     <h1 class="project-hero-title">Research Projects</h1>
     <p class="project-hero-subtitle">
-      Government-sponsored initiatives, enterprise LLM safety benchmarks, and adaptive multi-agent frameworks built at RespAI Lab.
+      Government-sponsored initiatives, enterprise LLM safety benchmarks, and deployed production platforms.
     </p>
   </div>
 
@@ -33,6 +33,8 @@ horizontal: false
             <i class="fa-solid fa-building-columns"></i> Funded Research Initiatives
           {% elsif category == 'research' %}
             <i class="fa-solid fa-flask-vial"></i> Core Research & Open Benchmarks
+          {% elsif category == 'platforms' %}
+            <i class="fa-solid fa-rocket"></i> Production Systems & Web Platforms
           {% else %}
             {{ category | capitalize }}
           {% endif %}
